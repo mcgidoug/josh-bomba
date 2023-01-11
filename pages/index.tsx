@@ -8,7 +8,6 @@ import consulting from '../public/consulting.png';
 import coding from "../public/coding.jpg";
 import headshot1 from "../public/headshot-1.jpg"
 import headshot2 from "../public/headshot-2.jpg"
-import headshot3 from "../public/headshot-3.jpg"
 import action1 from "../public/action-1.jpg"
 import action2 from "../public/action-2.jpg"
 import action3 from "../public/action-3.jpg"
@@ -38,7 +37,7 @@ export default function Home() {
               <p className='text-md py-5 leading-8 text-white dark:text-white md:text-xl max-w-xl mx-auto'>Local hire anywhere with a cheap hotel. Horror lover. 2006 Time Person of the Year. The best cat dad you will ever meet.</p>
             </div>
             <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
-              <Image alt='headshot of actor' src={headshot3} layout="fill" objectFit="cover"/>
+              <Image alt='headshot of actor' src={headshot1} layout="fill" objectFit="cover"/>
             </div>
           </section>
           
@@ -51,7 +50,6 @@ export default function Home() {
               <div><Image width={parseFloat('500%')} height={parseFloat('500%')} className='rounded-lg object-cover' alt='portfolio image 1' src={action1}/></div>
               <div><Image width={parseFloat('500%')} height={parseFloat('500%')} className='rounded-lg object-cover' alt='portfolio image 1' src={action2}/></div>
               <div><Image width={parseFloat('500%')} height={parseFloat('500%')} className='rounded-lg object-cover' alt='portfolio image 1' src={action3}/></div>
-              <div><Image width={parseFloat('500%')} height={parseFloat('500%')} className='rounded-lg object-cover' alt='portfolio image 1' src={headshot1}/></div>
             </div>
           </section>
 
