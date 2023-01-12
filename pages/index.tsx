@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube,} from "react-icons/ai"
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
+import {FiAward} from "react-icons/fi"
+import {VscFeedback} from "react-icons/vsc"
+import {TfiWorld} from "react-icons/tfi"
 import Image from "next/image";
-import design from '../public/design.png';
-import code from '../public/code.png';
-import consulting from '../public/consulting.png';
-import coding from "../public/coding.jpg";
 import headshot1 from "../public/headshot-1.jpg"
 import headshot2 from "../public/headshot-2.jpg"
 import action1 from "../public/action-1.jpg"
@@ -31,10 +29,10 @@ export default function Home() {
                 <li><a className='bg-gradient-to-r from-red-400 to-slate-500 text-white px-4 py-2 rounded-md ml-8' href="mailto:jbomba53@gmail.com">Email Me</a></li>
               </ul>
             </nav>
-            <div className='text-center p-10'>
-              <h2 className='text-5xl py-2 text-red-400 font-medium md:text-6xl'>Joshua Bomba</h2>
+            <div className='text-center p-1'>
+              <h2 className='text-5xl py-2 text-red-400 font-medium md:text-6xl'>Josh Bomba</h2>
               <h3 className='text-2xl py-2 text-red-400 md:text-3xl'>Chicago Based Actor</h3>
-              <p className='text-md py-5 leading-8 text-white dark:text-white md:text-xl max-w-xl mx-auto'>Local hire anywhere with a cheap hotel. Horror lover. 2006 Time Person of the Year. The best cat dad you will ever meet.</p>
+              <p className='text-md py-5 leading-8 text-white dark:text-white md:text-xl max-w-xl mx-auto'>If Kevin James and James Gandolfini had a big, bearded son, that&apos;d be me. Award-nominated actor based in Chicago, IL. Trained with talented folks such as Sarah Charipar, Sean Bradley, and Jason Narvy. Seen on stage with the Jeff Award winning Saltbox Theatre Collective. Professional spoken word poetry experience. Improv experience. 2006 Time Person of the Year. The best cat dad you will ever meet.</p>
             </div>
             <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
               <Image alt='headshot of actor' src={headshot1} layout="fill" objectFit="cover"/>
@@ -55,36 +53,30 @@ export default function Home() {
 
           <section>
             <div>
-              <h3 className='text-3xl text-white py-1'>Services I Offer</h3>
-              <p className='text-md py-2 leading-8 text-white dark:text-white'>We specialize in custom web development for small businesses and startups. Whether you need a simple brochure website or a complex web application, we have the expertise to bring your ideas to life.</p>
+              <h3 className='text-3xl text-white py-1'>Experience</h3>
+              <p className='text-md py-2 leading-8 text-white dark:text-white'>Brings positive energy and storytelling experience to any role he plays. Willing to do what&apos;s best for the production at all times.</p>
             </div>
             <div className='lg:flex gap-10'>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 lg:mx-auto">
-                <Image alt='3d icon of mountains' className='mx-auto' src={design} width={100} height={100}/>
-                <h3 className='text-lg text-white font-medium pt-8 pb-2'>Beautiful Designs</h3>
-                <p className='py-2 text-white'>Creating elegant designs suited for your needs.</p>
-                <h4 className='py-4 text-red-400'>Design tools we use</h4>
-                <p className='text-white dark:text-white py-1'>Figma</p>
-                <p className='text-white dark:text-white py-1'>Photoshop</p>
-                <p className='text-white dark:text-white py-1'>Illustrator</p>
+              <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 lg:mx-auto">
+                <FiAward className='mx-auto text-6xl' width={100} height={100}/>
+                <h3 className='text-lg text-red-400 font-medium pt-8 pb-2'>Award-Nominated Actor</h3>
+                <p className='text-white dark:text-white py-1'>Willing collaborator</p>
+                <p className='text-white dark:text-white py-1'>Featured in variety of short films and commercials</p>
+                <p className='text-white dark:text-white py-1'>Character role research</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 lg:mx-auto">
-                <Image alt='hashtag symbol' className='mx-auto' src={code} width={100} height={100}/>
-                <h3 className='text-lg text-white font-medium pt-8 pb-2'>Content Management System Integration</h3>
-                <p className='py-2 text-white'>Organizing, updating and managing your content.</p>
-                <h4 className='py-4 text-red-400'>CMS tools we use</h4>
-                <p className='text-white dark:text-white py-1'>Wordpress</p>
-                <p className='text-white dark:text-white py-1'>Drupal</p>
-                <p className='text-white dark:text-white py-1'>Joomla</p>
+              <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 lg:mx-auto">
+              <VscFeedback className='mx-auto text-6xl' width={100} height={100}/>
+                <h3 className='text-lg text-red-400 font-medium pt-8 pb-2'>Experience on Stage and Screen</h3>
+                <p className='text-white dark:text-white py-1'>National commercial actor</p>
+                <p className='text-white dark:text-white py-1'>Represented by 10 MGMT</p>
+                <p className='text-white dark:text-white py-1'>Experience in Chicago&apos;s rich theater scene</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 lg:mx-auto">
-                <Image alt='thumbs up symbol' className='mx-auto' src={consulting} width={100} height={100}/>
-                <h3 className='text-lg text-white font-medium pt-8 pb-2'>Maintenance and Support</h3>
-                <p className='py-2 text-white'>Our availability and service.</p>
-                <h4 className='py-4 text-red-400'>What type of support we provide.</h4>
-                <p className='text-white dark:text-white py-1'>24 hour support</p>
-                <p className='text-white dark:text-white py-1'>Contact via phone and email</p>
-                <p className='text-white dark:text-white py-1'>One on one consultation</p>
+              <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 lg:mx-auto">
+              <TfiWorld className='mx-auto text-6xl' width={100} height={100}/>
+                <h3 className='text-lg text-red-400 font-medium pt-8 pb-2'>Special Skills</h3>
+                <p className='text-white dark:text-white py-1'>Trained in Stage Combat</p>
+                <p className='text-white dark:text-white py-1'>Experience with several dialects</p>
+                <p className='text-white dark:text-white py-1'>Improv and spoken word experience</p>
               </div>
             </div>
           </section>
@@ -92,10 +84,11 @@ export default function Home() {
           <footer>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
               <a href="https://twitter.com/notjoshbomba" rel="noreferrer" target="_blank"><AiFillTwitterCircle /></a>
-              <a href="https://www.linkedin.com/in/douglasmcgillivray/" rel="noreferrer" target="_blank"><AiFillLinkedin /></a>
+              <a href="https://www.linkedin.com/in/joshua-bomba/" rel="noreferrer" target="_blank"><AiFillLinkedin /></a>
               <a href="https://www.youtube.com/watch?v=Lvllkch4pU8" rel="noreferrer" target="_blank"><AiFillYoutube /></a>
             </div>
           </footer>
+
         </main>
       </>
     </div>
